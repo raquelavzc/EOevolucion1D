@@ -45,6 +45,7 @@ sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevame
 
 # Ejecución del código
 
+
 Para ejecutar el código basta con descargar los ejecutables y guardarlos en una misma carpeta. 
 Es importante mencionar que el usuario debe ejecutar primero el archivo .f90 para obtener los snapshots
 y después correr el archivo .py para ver la evolución correspondiente en una animación.
