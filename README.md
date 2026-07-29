@@ -40,11 +40,21 @@ la derecha y otra hacia la izquierda, sin embargo, como el pulso está muy cerca
 izquierda, la parte que va hacia la izquierda choca casi inmediatamente
 con la frontera y se refleja. Por eso aparece una parte negativa cerca de r = 0 y las
 oscilaciones son el efecto numérico de la reflexión temprana en la frontera. La onda
-sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevamente
+sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevamente.
+
+# Instalación
+Un compilador de Fortran compatible con Fortran 2008, por ejemplo GNU Fortran o VSC.
+
+Python 3 (recomendado 3.10 o superior).
+
+E instalas los siguientes paquetes de Python:
+
+py -m pip install numpy matplotlib pillow
 
 
 # Ejecución del código
 
+Es importante 
 
 Para ejecutar el código basta con descargar los ejecutables y guardarlos en una misma carpeta. 
 Es importante mencionar que el usuario debe ejecutar primero el archivo .f90 para obtener los snapshots
@@ -61,6 +71,7 @@ gfortran .\ecuacion_de_onda\EOevolucion1D.f90 -o .\ecuacion_de_onda\EOevolucion1
 3.- Ejecuta Animación
 
 python .\ecuacion_de_onda.py
+
 
 
 
