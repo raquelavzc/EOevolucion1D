@@ -23,6 +23,7 @@ otros resultados.
 
 Para el perfil inicial gaussiano asignamos los siguientes valores:
 
-<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/86bd238e-2436-484b-9636-9558cb55c4b0" />
+
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/86bd238e-2436-484b-9636-9558cb55c4b0" />
 
 
