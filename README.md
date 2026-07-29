@@ -27,9 +27,26 @@ Para el perfil inicial gaussiano asignamos los siguientes valores:
 
 
 y obtendremos una onda centrada en r = 5 que se divide en dos picos. Ambas ondas
-viajan hacia los extremos de la frontera donde la solución se vuelve negativa 
+viajan hacia los extremos de la frontera donde la solución se vuelve negativa.
 
 <img width="800" height="600" alt="ecuacion_de_onda" src="https://github.com/user-attachments/assets/e52aa646-567b-4c1d-b2f8-85e87b27c765" />
+
+Con el fin de demostrar que la solución es tan sensible a los cambios de parámetros,
+volvemos a correr nuestro código con los mismos valores, pero esta vez solo cambiamos
+la posición inicial del perfil gaussiano a r=0.1.
+
+<img width="800" height="600" alt="ecuacion_de_onda" src="https://github.com/user-attachments/assets/03bcbe5f-3fcb-4014-a254-d2a30e1daee0" />
+
+El perfil inicial también se descompone en dos partes, una que intentaría viajar hacia
+la derecha y otra hacia la izquierda, sin embargo, como el pulso está muy cerca de la frontera
+izquierda, la parte que va hacia la izquierda choca casi inmediatamente
+con la frontera y se refleja. Por eso aparece una parte negativa cerca de r = 0 y las
+oscilaciones son el efecto numérico de la reflexión temprana en la frontera. La onda
+sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevamente
+
+
+
+
 
 
 
