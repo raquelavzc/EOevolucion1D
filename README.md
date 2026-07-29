@@ -43,7 +43,8 @@ oscilaciones son el efecto numérico de la reflexión temprana en la frontera. L
 sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevamente.
 
 # Instalación
-Un compilador de Fortran compatible con Fortran 2008, por ejemplo GNU Fortran o VSC.
+Se necesita un compilador de Fortran compatible con Fortran 2008, por ejemplo GNU Fortran. 
+En Windows, una opción práctica es MSYS2/MinGW-w64.
 
 Python 3 (recomendado 3.10 o superior).
 
