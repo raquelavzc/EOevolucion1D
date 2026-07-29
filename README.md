@@ -47,7 +47,7 @@ Un compilador de Fortran compatible con Fortran 2008, por ejemplo GNU Fortran o 
 
 Python 3 (recomendado 3.10 o superior).
 
-E instalas los siguientes paquetes de Python:
+E instalar los siguientes paquetes de Python:
 
 py -m pip install numpy matplotlib pillow
 
