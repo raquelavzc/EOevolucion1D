@@ -29,7 +29,8 @@ Para el perfil inicial gaussiano asignamos los siguientes valores:
 y obtendremos una onda centrada en r = 5 que se divide en dos picos. Ambas ondas
 viajan hacia los extremos de la frontera donde la solución se vuelve negativa 
 
-<img width="800" height="600" alt="ecuacion_de_onda" src="https://github.com/user-attachments/assets/fe5f03f7-b0d6-4656-8843-a75a75bd30d5" />
+<img width="800" height="600" alt="ecuacion_de_onda" src="https://github.com/user-attachments/assets/e52aa646-567b-4c1d-b2f8-85e87b27c765" />
+
 
 
 
