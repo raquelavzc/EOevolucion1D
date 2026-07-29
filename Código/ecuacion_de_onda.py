@@ -1,8 +1,11 @@
 import glob
 from pathlib import Path
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+from matplotlib.animation import PillowWriter
 from matplotlib.ticker import MaxNLocator
 
 base_dir = Path(__file__).resolve().parent
@@ -19,7 +22,8 @@ if initial_snapshot.exists():
         if Path(f).stat().st_mtime >= run_start_time - 1.0
     ]
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(8, 6))
+fig.subplots_adjust(left=0.18, bottom=0.14, top=0.9)
 
 data = np.loadtxt(files[0], skiprows=1)
 r = data[:, 0]
@@ -27,8 +31,9 @@ phi = data[:, 1]
 
 line, = ax.plot(r, phi, lw=2)
 
-ax.set_xlabel("r")
-ax.set_ylabel(r"$\phi$")
+ax.set_xlabel("r", fontsize=16)
+ax.set_ylabel(r"Campo escalar $\phi$", fontsize=16, labelpad=18)
+ax.tick_params(axis="both", labelsize=12)
 ax.set_xlim(r.min(), r.max())
 ax.xaxis.set_major_locator(MaxNLocator(nbins=9))
 
@@ -38,9 +43,14 @@ ax.set_ylim(-1.1 * phi_max, 1.1 * phi_max)
 def update(i):
     data = np.loadtxt(files[i], skiprows=1)
     line.set_ydata(data[:, 1])
-    ax.set_title(f"Evolucion de la onda")
+    ax.set_title(f"Evolucion del perfil gaussiano")
     return line,
 
 ani = FuncAnimation(fig, update, frames=len(files), interval=80, blit=True)
 
-plt.show()
+output_gif = base_dir / "ecuacion_de_onda.gif"
+ani.save(output_gif, writer=PillowWriter(fps=12))
+print(f"Animacion guardada en: {output_gif}")
+
+plt.close(fig)
+
