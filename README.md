@@ -1,6 +1,8 @@
 # EOevolucion1D
 En este repositorio se encuentran el código de evolución de la Ecuación de Onda 1D 
 
+El archivo PDF correspondiente al proyecto terminal se encuentra nombrado como `PT_RaquelItzelAlvarezCaballero_2026_CBI_FCC` y en él se encuentran las bases teóricas fundamentales para introducirse en la Relatividad Numérica y la evolución hiperbólica para el estudio de los fenómenos críticos o bien, el colapso gravitacional. Por lo que es recomedable que el usuario lea los capítulo 6 y 7 para una mejor compresión de la estructura de este código.
+
 Con el objetivo de familiarizar al lector con los conceptos fundamentales de
 evolución hiperbólica, resulta útil estudiar inicialmente un problema más sencillo como 
 la ecuación de onda unidimensional, ya que comparte las principales características hiperbólicas 
