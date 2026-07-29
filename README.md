@@ -50,12 +50,15 @@ Es importante mencionar que el usuario debe ejecutar primero el archivo .f90 par
 y después correr el archivo .py para ver la evolución correspondiente en una animación.
 
 1.- Abre la carpeta con la intrucción cd
+
 cd "C:\Users\raqli\OneDrive\Documentos\Proyecto terminal\código\proyecto_fortran"
 
 2.- Ejecuta EOevolucion1D.f90
+
 gfortran .\ecuacion_de_onda\EOevolucion1D.f90 -o .\ecuacion_de_onda\EOevolucion1D.exe
 
 3.- Ejecuta Animación
+
 python .\ecuacion_de_onda.py
 
 
