@@ -13,3 +13,15 @@ mente, estas mismas ideas las extenderemos al sistema Einstein-Klein-Gordon en
 coordenadas esféricas, donde las variables dinámicas evolucionan explícitamente en
 el tiempo mediante esquemas de diferencias finitas centradas y medias.
 
+# Ejemplo de una corrida
+Al interactuar con el programa, el lector podrá observar diferencias importantes
+relacionadas con la interacción de la perturbación con las fronteras numéricas al
+cambiar los parámetros y la propagación hiperbólica. Para este análisis, se eligió
+una familia específica de parámetros que ilustran el funcionamiento del código tanto
+física como numéricamente, sin embargo, el lector puede jugar con ellos para obtener
+otros resultados.
+
+Para el perfil inicial gaussiano asignamos los siguientes valores:
+<img width="297" height="417" alt="image" src="https://github.com/user-attachments/assets/86bd238e-2436-484b-9636-9558cb55c4b0" />
+
+
