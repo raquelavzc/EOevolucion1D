@@ -22,9 +22,7 @@ otros resultados.
 
 Para el perfil inicial gaussiano asignamos los siguientes valores:
 
-
 <img width="150" height="180" alt="image" src="https://github.com/user-attachments/assets/86bd238e-2436-484b-9636-9558cb55c4b0" />
-
 
 y obtendremos una onda centrada en r = 5 que se divide en dos picos. Ambas ondas
 viajan hacia los extremos de la frontera donde la solución se vuelve negativa.
@@ -44,6 +42,21 @@ con la frontera y se refleja. Por eso aparece una parte negativa cerca de r = 0 
 oscilaciones son el efecto numérico de la reflexión temprana en la frontera. La onda
 sigue viajando hacia la derecha y al chocar, aparece inversión de signo nuevamente
 
+
+#Ejecución del código
+
+Para ejecutar el código basta con descargar los ejecutables y guardarlos en una misma carpeta. 
+Es importante mencionar que el usuario debe ejecutar primero el archivo .f90 para obtener los snapshots
+y después correr el archivo .py para ver la evolución correspondiente en una animación.
+
+1.- Abre la carpeta con la intrucción cd
+cd "C:\Users\raqli\OneDrive\Documentos\Proyecto terminal\código\proyecto_fortran"
+
+2.- Ejecuta EOevolucion1D.f90
+gfortran .\ecuacion_de_onda\EOevolucion1D.f90 -o .\ecuacion_de_onda\EOevolucion1D.exe
+
+3.- Ejecuta Animación
+python .\ecuacion_de_onda.py
 
 
 
